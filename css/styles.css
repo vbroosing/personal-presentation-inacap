@@ -33,6 +33,7 @@ p {
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--footer-color);
+    text-align: center;
 }
 
 a {
@@ -51,14 +52,17 @@ img {
 h1, h2, h3 {
     text-align: center;
     font-family: var(--fuente-principal);
+    font-weight: bolder;
 }
 h1 {
     font-size: 7rem;
-    font-weight: bolder;
     color: var(--first-color);
 }
 h2 {font-size: 3.2rem;}
-h3 {font-size: 2.4rem;}
+h3 {
+    font-size: 2.4rem;
+    text-align: center;
+}
 
 .header {
     background-color: var(--first-color);
@@ -78,7 +82,6 @@ h3 {font-size: 2.4rem;}
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    gap: 1rem;
 }
 
 .navbar__nombre {
@@ -97,9 +100,12 @@ h3 {font-size: 2.4rem;}
     font-family: var(--fuente-principal);
     font-size: 1.8rem;
     padding: 1rem;
+    color: var(--footer-color)
 }
 
+
 .navegacion__enlace--,
+.nombre__enlace:hover,
 .navegacion__enlace:hover {
     color: var(--third-color);
 }
@@ -113,9 +119,55 @@ h3 {font-size: 2.4rem;}
 
     display: grid;
     align-items: center;
+    background-repeat: unset;
     
 }
 
-.visual__texto {
+/* MAIN */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+}
+
+.grid__elemento {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem;
+}
+
+.elemento__imagen {
+    min-height: 19rem;
+    background-repeat: round;
+    grid-column: 1 / 2;
+    background-position: center center;
+    grid-row: 1 / 2;
+
+}
+
+.primera {
+    background-image: url(../img/proyect1.jpg);
     
+}
+
+.segunda {
+    background-image: url(../img/proyect2.jpg);
+    
+}
+
+.tercera {
+    background-image: url(../img/proyect3.jpg);
+    
+}
+
+.cuarta {
+    background-image: url(../img/proyect4.jpg);
+}
+
+
+.small {
+    font-size: 85%;
 }
