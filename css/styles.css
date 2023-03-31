@@ -1,0 +1,94 @@
+:root {
+    --first-color: #f2e6d8;
+    --second-color: rgba(255,255,255,0.1);
+    --third-color: rgba(28,121,158,0.7);
+    --fourth-color: #1c799e;
+    --fifth-color: #0087e1;
+
+    --background-color: #FFF;
+
+    --footer-color: #333333;
+
+    --fuente-principal: 'Work Sans', sans-serif;
+    
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--background-color);
+    font-size: 1.6rem;
+    line-height: 1.5; /* 1.5 veces la fuente original */
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--footer-color);
+}
+
+a {
+    text-decoration: none; /* Eliminando los underlines de los href */
+}
+
+img {
+    width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuente-principal);
+}
+h1 {font-size: 4rem;}
+h2 {font-size: 3.2rem;}
+h3 {font-size: 2.4rem;}
+
+.header {
+    background-color: var(--first-color);
+}
+
+.navbar {
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--fuente-principal);
+
+}
+
+.navbar__navegacion {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar__nombre {
+    display: grid;
+    align-items: center;
+}
+
+.navegacion__enlace {
+    font-family: var(--fuente-principal);
+    color: var(--blanco);
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.navegacion__enlace--,
+.navegacion__enlace:hover {
+    color: var(--third-color);
+}
