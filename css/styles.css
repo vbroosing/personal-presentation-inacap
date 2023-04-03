@@ -179,18 +179,26 @@ h3 {
 }
 
 .secciones {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     justify-content: center;
-    gap: 18rem;
+    gap: 15rem;
 }
 .secciones__accesos {
-    display: grid;
-    grid-template-rows: repeat(4, auto);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
+    gap: 1rem;
+}
+.accesos{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    grid-column: 1 / 2;
 }
 
+
+/* FORMULARIO */
 .fieldset {
     border: none;
 }
@@ -250,4 +258,29 @@ h3 {
 
 .small {
     font-size: 50%;
+}
+
+.footer {
+    background-color: var(--footer-color);
+}
+
+.footer__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.flex__navbar__option {
+    color: var(--first-color);
+}
+
+.flex__navbar__option:hover {
+    cursor: pointer;
+    color: var(--fourth-color);
+    border: none;
+}
+
+.parrafo__footer {
+    color: var(--first-color);
 }
